@@ -89,6 +89,26 @@ body {
   margin: 0;
 }
 
+/* Lumière tamisée — double gradient lanterne magique centré sur Grogu */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 45% 35% at 50% 58%, rgba(255, 210, 120, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 55% at 50% 58%, rgba(170, 59, 255, 0.09) 0%, transparent 80%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    background:
+      radial-gradient(ellipse 45% 35% at 50% 58%, rgba(255, 210, 120, 0.05) 0%, transparent 55%),
+      radial-gradient(ellipse 70% 55% at 50% 58%, rgba(192, 132, 252, 0.10) 0%, transparent 80%);
+  }
+}
+
 /* Étoiles scintillantes */
 @keyframes twinkle {
   0%, 100% { opacity: 0.05; }
@@ -146,13 +166,13 @@ body {
 }
 
 /* Ball flottante — alignée sur l'ombre de la balle dans frogAnd_Shadow.png */
-/* X: 63% × 420 = 265px → left: 50% + 265 - 210 - 125 = 50% - 70px */
+/* X: 63% × 420 = 265px → left: 50% + 265 - 210 - 150 = 50% - 95px */
 /* Y: 74% × 420 = 311px → top:  50% + 311 - 210       = 50% + 101px */
 .ball-float {
   position: fixed;
   top: calc(58% + 80px);
-  left: calc(50% - 70px);
-  width: 250px;
+  left: calc(50% - 108px);
+  width: 300px;
   z-index: -1;
   opacity: 0.65;
   pointer-events: none;
@@ -172,6 +192,7 @@ body {
 
   .ball-float {
     top: calc(68% + 80px);
+    left: calc(50% - 95px);
   }
 }
 
