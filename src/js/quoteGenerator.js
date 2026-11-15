@@ -30,7 +30,28 @@ const quotes = [
   "Ton prochain pas, suffisant il est pour l'instant.",
   "Comme les étoiles, constant tu peux être.",
   "Rien ne presse, si dans le présent tu vis.",
-  "Connecté à toi-même, invincible tu deviens."
+  "Connecté à toi-même, invincible tu deviens.",
+  // Citations supplémentaires
+  "Patience n'est pas attente — présence active, elle est.",
+  "Un jardin, ton esprit est — ce que tu sèmes, tu récoltes.",
+  "La tempête passe, mais l'arbre enraciné reste.",
+  "Simple est le chemin, compliqué nous le rendons.",
+  "Écouter avant de parler — sage, cela te rend.",
+  "Ton souffle, une ancre est, quand le monde s'agite.",
+  "Petite la graine est, grand l'arbre deviendra.",
+  "Ce n'est pas la destination qui compte, mais le pas présent.",
+  "Vide ton esprit, et l'espace, la clarté remplira.",
+  "Fort n'est pas celui qui ne tombe jamais, mais celui qui se relève.",
+  "Dans le silence, ta propre voix tu entends enfin.",
+  "Aujourd'hui suffit — demain, de lui-même il s'occupera.",
+  "La lumière, même faible, l'obscurité elle dissipe.",
+  "Accueillir ce qui est, plus sage que résister c'est.",
+  "Ton cœur, une boussole est — fais-lui confiance.",
+  "Rien n'est permanent, pas même la difficulté présente.",
+  "Un sourire partagé, deux cœurs il allège.",
+  "Grandir dans le doute, plus précieux que stagner dans la certitude c'est.",
+  "La patience du rocher, imiter tu peux face à la rivière.",
+  "Simplement respirer — déjà, un acte de courage c'est."
 ];
 
 let lastIndex = -1;
